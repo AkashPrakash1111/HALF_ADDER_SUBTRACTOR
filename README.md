@@ -82,6 +82,26 @@ assign carry= ( a & b);
 endmodule
 
 
+i)Halfsubtractor:
+
+module hs(a,b,difference,borrow);
+
+
+input a,b;
+
+
+output difference,borrow;
+
+
+assign difference= (a ^ b);
+
+
+assign borrow= ( ~a & b);
+
+
+endmodule
+
+
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
